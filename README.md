@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME SHOBIKA P</H3>
-<H3>ENTER YOUR REGISTER NO 212221230096</H3>
+<H3>ENTER YOUR NAME: SHOBIKA P</H3>
+<H3>ENTER YOUR REGISTER NO: 212221230096</H3>
 <H3>EX. NO.4</H3>
-<H3>DATE17.03.24: </H3>
+<H3>DATE:17.03.24: </H3>
 <H1 ALIGN =CENTER> Implementation of Hidden Markov Model</H1>
 
 ## Aim: 
@@ -38,11 +38,11 @@ for t in range(1, len (observed_sequence)):
       alpha[t, j] = emission_matrix[j,
   observed_sequence [t]] * np.sum(alpha[t-1,:] *
   transition_matrix[:, j])
-# Calculate the probability of the observed sequence
+#Calculate the probability of the observed sequence
 probability = np.sum(alpha[-1,:])
-# Print the probability of the observed sequence
+#Print the probability of the observed sequence
 print("The probability of the observed sequence is:", probability)
-# Find the most likely sequence of weather states given the observed sequence
+#Find the most likely sequence of weather states given the observed sequence
 most_likely_sequence =[]
 for t in range(len(observed_sequence)):
   if alpha[t,0]>alpha[t,1]:
