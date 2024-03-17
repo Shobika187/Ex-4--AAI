@@ -49,6 +49,7 @@ for t in range(len(observed_sequence)):
     most_likely_sequence.append("sunny")
   else:
     most_likely_sequence.append("rainy")
+print("The most likely sequence of weather state is:",most_likely_sequence)
 ```
 
 ## Output:
